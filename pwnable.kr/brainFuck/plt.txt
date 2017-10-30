@@ -1,0 +1,57 @@
+Disassembly of section .plt:
+
+08048430 <getchar@plt-0x10>:
+ 8048430:	ff 35 04 a0 04 08    	pushl  0x804a004
+ 8048436:	ff 25 08 a0 04 08    	jmp    *0x804a008
+ 804843c:	00 00                	add    %al,(%eax)
+	...
+
+08048440 <getchar@plt>:
+ 8048440:	ff 25 0c a0 04 08    	jmp    *0x804a00c
+ 8048446:	68 00 00 00 00       	push   $0x0
+ 804844b:	e9 e0 ff ff ff       	jmp    8048430 <_init+0x24>
+
+08048450 <fgets@plt>:
+ 8048450:	ff 25 10 a0 04 08    	jmp    *0x804a010
+ 8048456:	68 08 00 00 00       	push   $0x8
+ 804845b:	e9 d0 ff ff ff       	jmp    8048430 <_init+0x24>
+
+08048460 <__stack_chk_fail@plt>:
+ 8048460:	ff 25 14 a0 04 08    	jmp    *0x804a014
+ 8048466:	68 10 00 00 00       	push   $0x10
+ 804846b:	e9 c0 ff ff ff       	jmp    8048430 <_init+0x24>
+
+08048470 <puts@plt>:
+ 8048470:	ff 25 18 a0 04 08    	jmp    *0x804a018
+ 8048476:	68 18 00 00 00       	push   $0x18
+ 804847b:	e9 b0 ff ff ff       	jmp    8048430 <_init+0x24>
+
+08048480 <__gmon_start__@plt>:
+ 8048480:	ff 25 1c a0 04 08    	jmp    *0x804a01c
+ 8048486:	68 20 00 00 00       	push   $0x20
+ 804848b:	e9 a0 ff ff ff       	jmp    8048430 <_init+0x24>
+
+08048490 <strlen@plt>:
+ 8048490:	ff 25 20 a0 04 08    	jmp    *0x804a020
+ 8048496:	68 28 00 00 00       	push   $0x28
+ 804849b:	e9 90 ff ff ff       	jmp    8048430 <_init+0x24>
+
+080484a0 <__libc_start_main@plt>:
+ 80484a0:	ff 25 24 a0 04 08    	jmp    *0x804a024
+ 80484a6:	68 30 00 00 00       	push   $0x30
+ 80484ab:	e9 80 ff ff ff       	jmp    8048430 <_init+0x24>
+
+080484b0 <setvbuf@plt>:
+ 80484b0:	ff 25 28 a0 04 08    	jmp    *0x804a028
+ 80484b6:	68 38 00 00 00       	push   $0x38
+ 80484bb:	e9 70 ff ff ff       	jmp    8048430 <_init+0x24>
+
+080484c0 <memset@plt>:
+ 80484c0:	ff 25 2c a0 04 08    	jmp    *0x804a02c
+ 80484c6:	68 40 00 00 00       	push   $0x40
+ 80484cb:	e9 60 ff ff ff       	jmp    8048430 <_init+0x24>
+
+080484d0 <putchar@plt>:
+ 80484d0:	ff 25 30 a0 04 08    	jmp    *0x804a030
+ 80484d6:	68 48 00 00 00       	push   $0x48
+ 80484db:	e9 50 ff ff ff       	jmp    8048430 <_init+0x24>
